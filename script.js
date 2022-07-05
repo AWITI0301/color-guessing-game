@@ -35,3 +35,24 @@ easyBtn.addEventListener("click", function() {
         }
     }
 });
+
+hardBtn.addEventListener("click", function() {
+    document.querySelector("h1").style.background = "rgb(233, 119, 119)";
+
+    statusText.textContent = "Let's Play!!";
+
+    this.style.background = "rgb(233, 119, 119)"
+    this.style.color = "white"
+    easyBtn.style.background = "white";
+    easyBtn.style.color = "rgb(233, 119, 119)";
+
+    boxCount = 6;
+    colors = generateRandomColor(boxCount);
+    pickedColor = colors[Math.floor(Math.random() * 6)];
+    console.log(boxes.length)
+    for (var i = 0; i < boxes.length; i++) {
+        boxes[i].style.background = colors[i];
+        boxes[i].style.display = "block";
+
+    }
+});
