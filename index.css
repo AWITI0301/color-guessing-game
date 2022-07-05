@@ -22,3 +22,15 @@ h1 {
     max-width: 600px;
     margin: 0px auto;
 }
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: inherit;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
