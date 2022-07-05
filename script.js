@@ -3,13 +3,13 @@ var s = document.querySelector('.rgbspan');
 var colors = generateRandomColor(6);
 var pickedColor = colors[Math.floor(Math.random() * 6)];
 s.textContent = pickedColor;
-
 var playbtn = document.querySelector("#playAgain");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 var boxCount = 6;
 var statusText = document.querySelector(".status")
 statusText.textContent = "Let's Play!!";
+
 
 easyBtn.addEventListener("click", function() {
 
@@ -36,6 +36,7 @@ easyBtn.addEventListener("click", function() {
     }
 });
 
+
 hardBtn.addEventListener("click", function() {
     document.querySelector("h1").style.background = "rgb(233, 119, 119)";
 
@@ -57,6 +58,7 @@ hardBtn.addEventListener("click", function() {
     }
 });
 
+
 playbtn.addEventListener("click", function() {
     document.querySelector("h1").style.background = "rgb(233, 119, 119)";
 
@@ -69,6 +71,7 @@ playbtn.addEventListener("click", function() {
         boxes[i].style.background = colors[i];
     }
 });
+
 
 for (var i = 0; i < colors.length; i++) {
     boxes[i].style.background = colors[i];
@@ -85,6 +88,7 @@ for (var i = 0; i < colors.length; i++) {
     });
 }
 
+
 function win() {
     for (var i = 0; i < colors.length; i++) {
         boxes[i].style.background = pickedColor;
@@ -94,11 +98,13 @@ function win() {
     statusText.textContent = "Correct!!";
 }
 
+
 function loose(a) {
     console.log(a);
     a.style.background = "#2f2f2f"
     statusText.textContent = "Try Again!";
 }
+
 
 function generateRandomColor(num) {
     var arr = []
