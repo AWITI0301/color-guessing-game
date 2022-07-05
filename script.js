@@ -69,3 +69,18 @@ playbtn.addEventListener("click", function() {
         boxes[i].style.background = colors[i];
     }
 });
+
+for (var i = 0; i < colors.length; i++) {
+    boxes[i].style.background = colors[i];
+    boxes[i].addEventListener('click', function() {
+        var selectedColor = this.style.background;
+        console.log(selectedColor);
+        console.log(pickedColor);
+        if (selectedColor === pickedColor) {
+            win();
+
+        } else {
+            loose(this);
+        }
+    });
+}
