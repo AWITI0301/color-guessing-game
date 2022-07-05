@@ -34,3 +34,28 @@ button {
     letter-spacing: 1px;
     transition: all 0.3s;
 }
+
+
+/* button:focus {
+    outline: 0;
+} */
+
+#playAgain {
+    border-radius: 20px;
+    color: #f88989;
+}
+
+#hardBtn {
+    color: #f88989;
+}
+
+#easybtn {
+    color: #f88989;
+}
+
+.status {
+    display: inline-block;
+    width: 20%;
+    color: #f88989;
+    font-weight: 900;
+}
