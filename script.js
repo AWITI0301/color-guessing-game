@@ -84,3 +84,12 @@ for (var i = 0; i < colors.length; i++) {
         }
     });
 }
+
+function win() {
+    for (var i = 0; i < colors.length; i++) {
+        boxes[i].style.background = pickedColor;
+    }
+    document.querySelector("h1").style.background = pickedColor;
+
+    statusText.textContent = "Correct!!";
+}
