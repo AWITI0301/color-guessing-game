@@ -99,3 +99,11 @@ function loose(a) {
     a.style.background = "#2f2f2f"
     statusText.textContent = "Try Again!";
 }
+
+function generateRandomColor(num) {
+    var arr = []
+    for (var i = 0; i < num; i++) {
+        arr.push(randomColor());
+    }
+    return arr;
+}
