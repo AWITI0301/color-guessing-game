@@ -13,3 +13,12 @@ h1 {
     font-weight: normal;
     text-transform: uppercase;
 }
+
+.rgbspan {
+    font-size: 200%;
+}
+
+.mainBox {
+    max-width: 600px;
+    margin: 0px auto;
+}
