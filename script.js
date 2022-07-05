@@ -93,3 +93,9 @@ function win() {
 
     statusText.textContent = "Correct!!";
 }
+
+function loose(a) {
+    console.log(a);
+    a.style.background = "#2f2f2f"
+    statusText.textContent = "Try Again!";
+}
