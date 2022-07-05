@@ -56,3 +56,16 @@ hardBtn.addEventListener("click", function() {
 
     }
 });
+
+playbtn.addEventListener("click", function() {
+    document.querySelector("h1").style.background = "rgb(233, 119, 119)";
+
+    statusText.textContent = "Let's Play!!";
+
+    colors = generateRandomColor(boxCount);
+    pickedColor = colors[Math.floor(Math.random() * boxCount)];
+    s.textContent = pickedColor;
+    for (var i = 0; i < boxes.length; i++) {
+        boxes[i].style.background = colors[i];
+    }
+});
